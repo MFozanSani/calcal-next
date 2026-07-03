@@ -18,8 +18,8 @@ export default function Home() {
   const macros = calculateMacros(calories)
   return (
     <div className="flex min-h-screen flex-col p-24">
-      <h1 className="text-3xl font-bold">Welcome to Calcal</h1>
-      <p className="text-lg">Your all-in-one calculator for everyday needs.</p>
+      <h1 className="text-3xl text-center md:text-left font-bold">Welcome to Calcal</h1>
+      <p className="text-lg text-center md:text-left">Your all-in-one calculator for everyday needs.</p>
       <Form weight={weight} setWeight={setWeight} height={height} setHeight={setHeight} age={age} setAge={setAge} sex={sex} setSex={setSex} activitylevel={activitylevel} setActivitylevel={setActivitylevel} fitnessgoal={fitnessgoal} setFitnessgoal={setFitnessgoal} />
       {/* <p>{BMI}</p> */}
       <Results BMI={BMI} age={age} category={category} BMR={BMR} TDEE={TDEE} calories={calories} macros={macros} />
