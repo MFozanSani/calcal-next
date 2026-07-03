@@ -1,3 +1,4 @@
+import MacroChart from "./MacroChart"
 export default function Results({ BMI, age, category, BMR, TDEE, calories, macros }) {
     return (
         <>
@@ -16,6 +17,9 @@ export default function Results({ BMI, age, category, BMR, TDEE, calories, macro
                     {calories && <p className="text-3xl flex">Carbs: <b className="ml-auto">{macros.carbs}</b></p>}
                     {calories && <p className="text-3xl flex">Fats: <b className="ml-auto">{macros.fats}</b></p>}
                 </div>
+            </div>
+            <div>
+                <MacroChart macros={macros} />
             </div>
         </>
     )
