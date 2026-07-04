@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Form from '@/components/Form'
 import Results from '@/components/Results'
 import {calculateBMI, categoryBMI, calculateBMR, calculateTDEE, caloriesTarget, calculateMacros} from '@/utils/fitnessMath'
+import ThemeToggle from '@/components/ThemeToggle'
 export default function Home() {
   const [weight, setWeight] = useState('')
   const [height, setHeight] = useState('')
@@ -18,6 +19,7 @@ export default function Home() {
   const macros = calculateMacros(calories)
   return (
     <div className="flex min-h-screen flex-col p-24">
+      {/* <ThemeToggle /> */}
       <h1 className="text-3xl text-center md:text-left font-bold">Welcome to Calcal</h1>
       <p className="text-lg text-center md:text-left">Your all-in-one calculator for everyday needs.</p>
       <Form weight={weight} setWeight={setWeight} height={height} setHeight={setHeight} age={age} setAge={setAge} sex={sex} setSex={setSex} activitylevel={activitylevel} setActivitylevel={setActivitylevel} fitnessgoal={fitnessgoal} setFitnessgoal={setFitnessgoal} />

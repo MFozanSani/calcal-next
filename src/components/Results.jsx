@@ -1,5 +1,7 @@
 import MacroChart from "./MacroChart"
 export default function Results({ BMI, age, category, BMR, TDEE, calories, macros }) {
+    if (BMI && age && category && BMR && TDEE && calories && macros ) {
+        
     return (
         <>
             <div className="grid grid-cols-1 md:grid-cols-4 mx-1 md:mx-4 gap-4 py-5">
@@ -23,5 +25,6 @@ export default function Results({ BMI, age, category, BMR, TDEE, calories, macro
             </div>
         </>
     )
+}
 
 }
