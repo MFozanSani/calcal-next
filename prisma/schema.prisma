@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model MacroLog{
+  id Int @id @default(autoincrement())
+  weight Float 
+  height Float 
+  age Int
+  sex String 
+  activityLevel String 
+  fitnessGoal String
+  protein Float
+  carbs Float 
+  fats Float 
+  createdAt DateTime @default(now())
+}
