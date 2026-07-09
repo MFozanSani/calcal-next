@@ -1,6 +1,6 @@
 export default function Form({ weight, setWeight, height, setHeight, age, setAge, sex, setSex, activitylevel, setActivitylevel, fitnessgoal, setFitnessgoal }) {
     return (<>
-        <form action="" className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 p-1 md:p-5 ">
+        <form action="" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-4 p-1 md:p-5 ">
             <div className="flex flex-col">
 
                 <label htmlFor="weight" className="block text-sm font-medium text-gray-700 mt-4">Enter your weight:</label>

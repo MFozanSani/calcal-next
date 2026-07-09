@@ -51,7 +51,7 @@ export default function Home() {
       <button 
         onClick={handleSaveMacroLog}
         disabled={isSaving}
-        className="mx-auto mt-6 w-1/4 p-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 disabled:bg-gray-400 transition"
+        className="mx-auto mt-6 w-full md:w-1/2 lg:w-1/4 p-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 disabled:bg-gray-400 transition"
       >
         {isSaving ? "Saving to Database..." : "Save Daily Log to History"}
       </button>
